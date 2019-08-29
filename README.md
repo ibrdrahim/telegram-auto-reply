@@ -22,3 +22,6 @@ telegram_username = 'YOUR TELEGRAM USERNAME'
 5. Run main.py
 
 6. Enjoy! 🍻
+
+inspired by 
+https://gist.github.com/yi-jiayu/acc31fbad5a25f746430428ce4d62c28
