@@ -12,12 +12,13 @@ https://docs.telethon.dev/en/latest/basic/installation.html
 3. Install telethon<br/>
 https://docs.telethon.dev/en/latest/basic/installation.html
 
-4. Setup your environtment<br/>
-
+4. Setup your environtment
 <pre><code>
-
 api_id = 'YOUR API ID'
 api_hash = 'YOUR API HASH'
 telegram_username = 'YOUR TELEGRAM USERNAME'
-
 </code></pre>
+
+5. Run main.py
+
+6. Enjoy! 🍻
