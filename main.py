@@ -9,7 +9,7 @@ import os
 from telethon import TelegramClient, events, utils
 
 session = os.environ.get('TG_SESSION', 'printer')
-api_id = YOUR API KEY
+api_id = 'YOUR API KEY'
 api_hash = 'YOUR API HASH'
 proxy = None  # https://github.com/Anorov/PySocks
 
