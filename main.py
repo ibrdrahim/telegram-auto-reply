@@ -32,11 +32,11 @@ with open('quizzes.json') as json_file:
 @client.on(events.NewMessage)
 async def handle_new_message(event):
     
-    me = await client.get_me()
+    me = await client.get_me().username
     from_ = await event.client.get_entity(event.from_id)  # this lookup will be cached by telethon
     to_ = await event.client.get_entity(event.message.to_id)
 
-    needToProceed = from_.is_self if debug_mode else not from_.is_self and (event.is_private or re.search(me,event.raw_text))
+    needToProceed = from_.is_self if debug_mode else not from_.is_self and (event.is_private or re.search("@"+me.username,event.raw_text))
     if needToProceed:  # only auto-reply to private chats:  # only auto-reply to private chats   
         if not from_.bot and event:  # don't auto-reply to bots
             print(time.asctime(), '-', event.message)  # optionally log time and message
