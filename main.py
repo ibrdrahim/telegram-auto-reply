@@ -7,18 +7,6 @@ import re
 
 from telethon import TelegramClient, events, utils
 
-def get_env(name, message, cast=str):
-    if name in os.environ:
-        return os.environ[name]
-    while True:
-        value = input(message)
-        try:
-            return cast(value)
-        except ValueError as e:
-            print(e, file=sys.stderr)
-            time.sleep(1)
-
-
 session = os.environ.get('TG_SESSION', 'printer')
 api_id = 'YOUR API ID'
 api_hash = 'YOUR API HASH'
