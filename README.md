@@ -16,7 +16,7 @@ https://docs.telethon.dev/en/latest/basic/installation.html
 <pre><code>
 api_id = 'YOUR API ID'
 api_hash = 'YOUR API HASH'
-telegram_username = 'YOUR TELEGRAM USERNAME'
+telegram_username = '@YOUR USERNAME'
 </code></pre>
 
 5. Run main.py
