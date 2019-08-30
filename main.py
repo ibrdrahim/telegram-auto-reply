@@ -5,13 +5,19 @@ import re
 import json
 import random
 import os
+from pprint import pprint
 
 from telethon import TelegramClient, events, utils
+from dotenv import load_dotenv
+
+load_dotenv() # get .env variable
 
 session = os.environ.get('TG_SESSION', 'printer')
-api_id = 'YOUR API KEY'
-api_hash = 'YOUR API HASH'
-username = '@YOUR USERNAME'
+api_id = os.getenv("API_ID")
+api_hash = os.getenv("API_HASH")
+username = os.getenv("USERNAME")
+debug_mode = os.getenv("DEBUG_MODE").upper() == "TRUE"
+
 proxy = None  # https://github.com/Anorov/PySocks
 
 # Create and start the client so we can make requests (we don't here)
@@ -30,14 +36,15 @@ async def handle_new_message(event):
     from_ = await event.client.get_entity(event.from_id)  # this lookup will be cached by telethon
     to_ = await event.client.get_entity(event.message.to_id)
 
-    if not from_.is_self and (event.is_private or re.search(username,event.raw_text)):  # only auto-reply to private chats:  # only auto-reply to private chats   
+    needToProceed = from_.is_self if debug_mode else not from_.is_self and (event.is_private or re.search(username,event.raw_text))
+    if needToProceed:  # only auto-reply to private chats:  # only auto-reply to private chats   
         if not from_.bot and event:  # don't auto-reply to bots
             print(time.asctime(), '-', event.message)  # optionally log time and message
             time.sleep(1)  # pause for 1 second to rate-limit automatic replies   
             message = ""
             senderList.append(to_.id)
             if senderList.count(to_.id) < 2:
-                message =   f"""**AUTO REPLY**" 
+                message =   f"""**AUTO REPLY**
                 \nHi @{from_.username},
                 \n\nMohon maaf boss saya sedang offline, mohon tunggu sebentar.
                 \nSilahkan lihat-lihat [imacakes](https://www.instagram.com/ima_cake_cirebon) dulu untuk cuci mata.
@@ -46,7 +53,7 @@ async def handle_new_message(event):
                 message =   f"""**AUTO REPLY**
                 \nMohon bersabar @{from_.username}, boss saya masih offline 😒"""
             elif senderList.count(to_.id) < 4:
-                message = f"""**AUTO REPLY**" 
+                message = f"""**AUTO REPLY** 
                 \n@{from_.username} Tolong bersabar yaa 😅"""
             else:
                 random_number = random.randint(0,len(quizzes) - 1)

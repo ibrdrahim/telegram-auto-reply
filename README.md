@@ -12,12 +12,16 @@ https://www.python.org/downloads/
 3. Install telethon<br/>
 https://docs.telethon.dev/en/latest/basic/installation.html
 
-4. Setup your environtment
+4. Open .env and setup your environtment
+notes: 
+if debug mode set to true, script will only response to message from self
 <pre><code>
-api_id = 'YOUR API ID'
-api_hash = 'YOUR API HASH'
-telegram_username = 'YOUR TELEGRAM USERNAME'
+API_ID = YOUR API ID
+API_HASH = 'YOUR API HASH'
+USERNAME = '@YOUR USERNAME'
+DEBUG_MODE = false
 </code></pre>
+
 
 5. Run main.py
 
