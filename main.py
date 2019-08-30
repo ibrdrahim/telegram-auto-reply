@@ -9,8 +9,8 @@ import os
 from telethon import TelegramClient, events, utils
 
 session = os.environ.get('TG_SESSION', 'printer')
-api_id = 958716
-api_hash = '1c13f2eeaca3088521ad51b1a4533e72'
+api_id = YOUR API KEY
+api_hash = 'YOUR API HASH'
 proxy = None  # https://github.com/Anorov/PySocks
 
 # Create and start the client so we can make requests (we don't here)
