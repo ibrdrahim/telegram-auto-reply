@@ -22,10 +22,13 @@ USERNAME = '@YOUR USERNAME'
 DEBUG_MODE = false
 </code></pre>
 
-
 5. Run main.py
 
 6. Enjoy! 🍻
+
+Example 
+
+![Example](https://pbs.twimg.com/media/EDNXtmfUEAAY2u8?format=jpg&name=4096x4096)
 
 inspired by 
 https://gist.github.com/yi-jiayu/acc31fbad5a25f746430428ce4d62c28
