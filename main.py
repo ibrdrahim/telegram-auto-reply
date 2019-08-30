@@ -11,6 +11,7 @@ from telethon import TelegramClient, events, utils
 session = os.environ.get('TG_SESSION', 'printer')
 api_id = 'YOUR API KEY'
 api_hash = 'YOUR API HASH'
+username = '@YOUR USERNAME'
 proxy = None  # https://github.com/Anorov/PySocks
 
 # Create and start the client so we can make requests (we don't here)
@@ -29,7 +30,7 @@ async def handle_new_message(event):
     from_ = await event.client.get_entity(event.from_id)  # this lookup will be cached by telethon
     to_ = await event.client.get_entity(event.message.to_id)
 
-    if not from_.is_self and (event.is_private or re.search("@baimbot",event.raw_text)):  # only auto-reply to private chats:  # only auto-reply to private chats   
+    if not from_.is_self and (event.is_private or re.search(username,event.raw_text)):  # only auto-reply to private chats:  # only auto-reply to private chats   
         if not from_.bot and event:  # don't auto-reply to bots
             print(time.asctime(), '-', event.message)  # optionally log time and message
             time.sleep(1)  # pause for 1 second to rate-limit automatic replies   
