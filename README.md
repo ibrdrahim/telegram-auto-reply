@@ -7,7 +7,7 @@ How to use
  got to https://my.telegram.org and go to API development tools
  
 2. Install Python<br/>
-https://docs.telethon.dev/en/latest/basic/installation.html
+https://www.python.org/downloads/
 
 3. Install telethon<br/>
 https://docs.telethon.dev/en/latest/basic/installation.html
