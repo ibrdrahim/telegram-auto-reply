@@ -18,7 +18,6 @@ if debug mode set to true, script will only response to message from self
 <pre><code>
 API_ID = YOUR API ID
 API_HASH = 'YOUR API HASH'
-USERNAME = '@YOUR USERNAME'
 DEBUG_MODE = false
 </code></pre>
 
