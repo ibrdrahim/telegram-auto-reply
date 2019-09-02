@@ -40,7 +40,11 @@
         "answer" : "Muhammad Youtube Kalla"
     },
     {
-        "question" : "Terjemahkan ke dalam bahasa jepang “tidak ada uang”?",
+        "question" : "Terjemahkan ke dalam bahasa jepang “tidak ada uang?",
         "answer" : "Sakurata takupusing"
+    },
+    {
+        "question" : "Atlet apa yang beratnya cuman 3 kg?",
+        "answer" : "Bambang Tabung Gas"
     }
 ]
