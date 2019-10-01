@@ -64,9 +64,14 @@
         "answer" : "Obat nyamuk bakar"
     },
     {
+        "question" : "Sebutkan 4 nama buah dalam satu detik?",
+        "answer" : "Rujak"
+    },
+    {
         "question" : "Cicak Cicak apa yang bikin mati?",
         "answer" : "Cicak Napas"
-    }
+    },
+    {
         "question" : "Kenapa zombie nyerang barengan?",
         "answer" : "Kalo sendiri namanya Zomblo"
     },
