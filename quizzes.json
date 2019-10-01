@@ -114,5 +114,9 @@
     {
         "question" : "Hewan apa yang gak pernah salah?",
         "answer" : "Kucing ga Wrong"
+    },
+    {
+        "question" : "Buah apa yang gak tau malu?",
+        "answer" : "O raisin"
     }
 ]
