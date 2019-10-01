@@ -114,5 +114,9 @@
     {
         "question" : "Hewan apa yang gak pernah salah?",
         "answer" : "Kucing ga Wrong"
-    }
+    },
+    {
+      "question" : "Artis yang emosian?",
+      "answer" : "Anjasmaramara"
+  }
 ]
