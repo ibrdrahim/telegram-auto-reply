@@ -94,5 +94,25 @@
    {
        "question" : "Siapa penyanyi yang suka marah-marah?",
        "answer" : "Inul Daratinggi"
-   }
+   },
+    {
+        "question" : "Nengok kanan kiri tapi gak nyebrang2?",
+        "answer" : "Kipas angin"
+    },
+    {
+        "question" : "Ban apa yang udaranya dingin?",
+        "answer" : "Bandung"
+    },
+    {
+        "question" : "Naiknya cepet, turunya lambat banget?",
+        "answer" : "Ingus"
+    },
+    {
+          "question" : "Sayur apa yang selalu dingin?",
+          "answer" : "Sayur COLD"
+    },
+    {
+        "question" : "Hewan apa yang gak pernah salah?",
+        "answer" : "Kucing ga Wrong"
+    }
 ]
