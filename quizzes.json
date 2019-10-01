@@ -106,5 +106,9 @@
     {
           "question" : "Sayur apa yang selalu dingin?",
           "answer" : "Sayur COLD"
+    },
+    {
+        "question" : "Hewan apa yang gak pernah salah?",
+        "answer" : "Kucing ga Wrong"
     }
 ]
