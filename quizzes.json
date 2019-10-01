@@ -91,10 +91,6 @@
        "question" : "Paus paus apa yang suka ke masjid?",
        "answer" : "PaUstad"
    },
-   {
-       "question" : "Siapa penyanyi yang suka marah-marah?",
-       "answer" : "Inul Daratinggi"
-   },
     {
         "question" : "Nengok kanan kiri tapi gak nyebrang2?",
         "answer" : "Kipas angin"
@@ -112,7 +108,7 @@
           "answer" : "Sayur COLD"
     },
     {
-        "question" : "Hewan apa yang gak pernah salah?",
-        "answer" : "Kucing ga Wrong"
+          "question" : "Penyakit kulit apa yang banyak penggemarnya?",
+          "answer" : "Korengan-Pop"
     }
 ]
