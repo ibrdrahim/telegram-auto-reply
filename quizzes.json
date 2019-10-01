@@ -94,5 +94,9 @@
     {
         "question" : "Nengok kanan kiri tapi gak nyebrang2?",
         "answer" : "Kipas angin"
+    },
+    {
+        "question" : "Naiknya cepet, turunya lambat banget?",
+        "answer" : "Ingus"
     }
 ]
