@@ -130,5 +130,13 @@
     {
         "question" : "Lemari apa yg bisa masuk kantong?",
         "answer" : "Lemaribuan"
+    },
+    {
+        "question" : "Belajar bahasa Mandarin, lantai basah artinya apa?",
+        "answer" : "Lhi Chin!"
+    },
+    {
+        "question" : "Kenapa orang naik taksi tidak bayar uang dahulu?",
+        "answer" : "Karena uang dahulu sudah tidak laku"
     }
 ]
