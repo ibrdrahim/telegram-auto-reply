@@ -1,7 +1,7 @@
 # telegram auto reply
 Python script using telethon for auto replying telegram message
 
-How to use 
+How to use :
 
 1. Get Telegram API Key<br/>
  got to https://my.telegram.org and go to API development tools
