@@ -5,6 +5,7 @@ import re
 import json
 import random
 import os
+from asyncio import sleep
 from pprint import pprint
 
 from telethon import TelegramClient, events, utils
@@ -40,7 +41,7 @@ async def handle_new_message(event):
     if needToProceed:  # only auto-reply to private chats:  # only auto-reply to private chats   
         if not from_.bot and event:  # don't auto-reply to bots
             print(time.asctime(), '-', event.message)  # optionally log time and message
-            time.sleep(1)  # pause for 1 second to rate-limit automatic replies   
+            await sleep(1)  # pause for 1 second to rate-limit automatic replies   
             message = ""
             senderList.append(to_.id)
             if senderList.count(to_.id) < 2:
