@@ -142,5 +142,9 @@
     {
         "question" : "Masak apa yang ragu-ragu?",
         "answer" : "Masak iya sih"
+    },
+    {
+        "question" : "Lemari apa yang bisa dimasukkan kantong?",
+        "answer" : "Lemaribuan"
     }
 ]
